@@ -10,10 +10,11 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="" />
@@ -32,10 +33,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#shoes"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Product </a>
+                <a class="nav-link" href="#part">Product </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
@@ -48,15 +51,15 @@
         </div>
       </nav>
       <!-- slider start -->
-      <section class="container mt-5">
+      <section class="container mt-5 py-5">
         <div
           id="carouselExampleControls"
           class="carousel slide"
           data-bs-ride="carousel "
         >
           <div class="carousel-inner">
-            <div class="carousel-item active bg-info p-5 border rounded">
-              <div class="row container">
+            <div class="carousel-item active panda-bg-info p-5 border rounded">
+              <div class="row container ">
                 <div class="col col-lg-7 d-flex align-items-center">
                   <div>
                     <h1>Cool Dude Headphone</h1>
@@ -77,8 +80,8 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item bg-info p-5 border rounded">
-              <div class="row bg-info container">
+            <div class="carousel-item active panda-bg-info p-5 border rounded">
+              <div class="row panda-bg-info container">
                 <div class="col col-lg-7 d-flex align-items-center">
                   <div>
                     <h2>Mega LCD TV For Sports</h2>
@@ -99,8 +102,8 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item active bg-info p-5 border rounded">
-              <div class="row bg-info container">
+            <div class="carousel-item active panda-bg-info p-5 border rounded">
+              <div class="row panda-bg-info container">
                 <div class="col col-lg-7 d-flex align-items-center">
                   <div>
                     <h2>X-Box for your living room</h2>
@@ -143,137 +146,196 @@
         </div>
       </section>
       <!-- slider end -->
-      <!-- js stylesheet -->
+
     </header>
     <!-- main patrs start -->
     <main>
       <section class="container">
         <div class="container text-center py-5">
-            <div class="row g-3">
-              <div class="col-lg-4 col-md-6 col-sm-12 ">
-                <div class="p-3 border bg-info d-flex align-items-center justify-content-around border rounded">
-                    <h1>Bag</h1>
-                    <img src="images/categories/bag.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="p-3 border bg-info d-flex align-items-center justify-content-around border rounded">
-                    <h1>Watch</h1>
-                    <img src="images/categories/watch.png" alt="">
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="p-3 border bg-info d-flex align-items-center justify-content-around border rounded">
-                    <h1>Shoes</h1>
-                    <img src="images/categories/shoes.png" alt="">
-                </div>
-              </div>
-              
+          <div class="row g-3 categotis">
+            <div class="col-lg-4 col-md-6 col-sm-12" id="part">
+            <div
+              class="p-3 border panda-bg-info d-flex align-items-center justify-content-around border rounded"
+            >
+              <h1>Bag</h1>
+              <img src="images/categories/bag.png" alt="" />
+            </div>
           </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="p-3 border panda-bg-info d-flex align-items-center justify-content-around border rounded"
+            >
+              <h1>Watch</h1>
+              <img src="images/categories/watch.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="p-3 border panda-bg-info d-flex align-items-center justify-content-around border rounded"
+            >
+              <h1>Shoes</h1>
+              <img src="images/categories/shoes.png" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- main parts end -->
     <!-- card section start -->
     <section class="container my-5">
-        <h1>Shoes</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100 border border-0 shadow-lg">
-                <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Reebok Pump
-                </h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco 
-                    est sit aliqua dolor do amet sint.</p>
-                    <h2>$500</h2>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="button">BUY NOW</button>
-                </div>
-               
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 border border-0 shadow-lg">
-                <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Reebok All Terrain
-                </h5>
-                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  <h2>$344</h2>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="button">BUY NOW</button>
-                </div>
-                
-              </div>
-            </div>
-            <div class="col bg-">
-              <div class="card h-100 border border-0 shadow-lg">
-                <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Reebok Dart Men’s Shoes
-                </h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco 
-                    est sit aliqua dolor do amet sint.</p>
-                    <h2 >$466</h2>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="button">BUY NOW</button>
-                </div>
-              </div>
+      <h1>Shoes</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 border border-0 shadow-lg">
+            <img src="images/shoes/shoe-1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Reebok Pump</h5>
+              <p class="card-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <h2>$500</h2>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="button"
+              >
+                BUY NOW
+              </button>
             </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border border-0 shadow-lg">
+            <img src="images/shoes/shoe-2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Reebok All Terrain</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+              <h2>$344</h2>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="button"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col bg-">
+          <div class="card h-100 border border-0 shadow-lg">
+            <img src="images/shoes/shoe-3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+              <p class="card-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <h2>$466</h2>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="button"
+              >
+                BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- card section end -->
     <!-- card bags part start -->
 
     <section>
-        <section class="container my-5">
-            <h1>Backpack</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card h-100 border border-0 shadow-lg">
-                    <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Ison Backpack
-
-                    </h5>
-                      <p class="card-text">Amet minim mollit non deserunt ullamco 
-                        est sit aliqua dolor do amet sint.</p>
-                        <h2>$500</h2>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="button">BUY NOW</button>
-                    </div>
-                   
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100 border border-0 shadow-lg">
-                    <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Biaowang Backpack
-
-                    </h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <h2>$344</h2>
-                      <button type="button" class="btn btn-primary" data-bs-toggle="button">BUY NOW</button>
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col bg-">
-                  <div class="card h-100 border border-0 shadow-lg">
-                    <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Reebok Dart Men’s Shoes
-                    </h5>
-                      <p class="card-text">Amet minim mollit non deserunt ullamco 
-                        est sit aliqua dolor do amet sint.</p>
-                        <h2 >$466</h2>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="button">BUY NOW</button>
-                    </div>
-                  </div>
-                </div>
+      <section class="container my-5">
+        <h1>Backpack</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 border border-0 shadow-lg">
+              <img src="images/bags/bag-1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Ison Backpack</h5>
+                <p class="card-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+                <h2>$500</h2>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="button"
+                >
+                  BUY NOW
+                </button>
               </div>
-        </section>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-0 shadow-lg">
+              <img src="images/bags/bag-2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Biaowang Backpack</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <h2>$344</h2>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="button"
+                >
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col bg-">
+            <div class="card h-100 border border-0 shadow-lg">
+              <img src="images/bags/bag-3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
+                <p class="card-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint.
+                </p>
+                <h2>$466</h2>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="button"
+                >
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-   
-    
-     <!-- card bags part end -->
+    <!-- card bags part end -->
+    <!-- form section start -->
+    <section
+      class="container my-5 p-5 panda-bg-info border border- rounded d-flex justify-content-center align-items-center"
+    >
+      <form>
+        <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales specials and more</p>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleInputPassword1" />
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </section>
+    <!-- form section end -->
+    <footer class="container d-flex justify-content-center">
+      <p>@Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </footer>
+      <!-- js stylesheet -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
